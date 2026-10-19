@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'SQL CRUD Operations'
-sidebar_position: 5
+sidebar_position: 6
 slug: "custom-reactor/crud-ops"
 description: "How to create SQL CRUD operations in a reactor"
 ---

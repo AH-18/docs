@@ -1,13 +1,13 @@
 ---
-sidebar_label: 'Create Custom Pixel'
-sidebar_position: 3
+sidebar_label: 'Create Custom Pixel Reactor'
+sidebar_position: 4
 slug: "java/custom-reactor"
 description: "How to create custom pixels (reactors)"
 ---
 
 import AppName from "@site/src/components/CustomFields";
 
-# Create Your Own Pixel
+# Create Your Own Pixel/Reactor
 ### Overview
 A reactor is a business logic unit of **[Pixel](../../Building%20Apps/Add%20Custom%20Reactors%20to%20Apps/Pixels.md)** which performs the desired operation for the user. At its core, a reactor is just a Java class file. Custom reactors are located inside a java folder within an App folder
 <!-- TODO link to pro code file structure -->

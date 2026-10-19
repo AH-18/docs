@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Python Reactors'
-sidebar_position: 6
+sidebar_position: 7
 slug: "custom-reactor/python-inline"
 description: "A guide to using python in reactors"
 ---
