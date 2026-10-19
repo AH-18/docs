@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Run Pixels'
-sidebar_position: 4
+sidebar_position: 5
 slug: "java/run-pixel"
 description: "How to run pixels"
 ---
