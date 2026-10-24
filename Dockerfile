@@ -40,6 +40,17 @@ ENV PATH=$PNPM_HOME:$PATH
 
 RUN corepack enable
 
+# The npm shipped in the base image bundles libraries with known vulnerabilities.
+# Replace them with fixed versions from a separately locked installation.
+COPY npm-security /tmp/npm-security
+RUN npm ci --prefix /tmp/npm-security --ignore-scripts --no-audit --no-fund \
+    && for m in balanced-match brace-expansion http-cache-semantics ip-address tar undici; do \
+         rm -rf "/usr/local/lib/node_modules/npm/node_modules/$m" \
+         && cp -a "/tmp/npm-security/node_modules/$m" /usr/local/lib/node_modules/npm/node_modules/; \
+       done \
+    && node /tmp/npm-security/verify.mjs \
+    && rm -rf /tmp/npm-security /root/.npm
+
 COPY --from=deps /repo /repo
 
 WORKDIR /repo/docusaurus

@@ -1,0 +1,12 @@
+{
+  "name": "documentation-npm-security-dependencies",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "brace-expansion": "5.0.12",
+    "http-cache-semantics": "4.3.0",
+    "ip-address": "10.7.4",
+    "tar": "7.5.22",
+    "undici": "6.29.1"
+  }
+}
